@@ -2,6 +2,7 @@ class Dog < ActiveRecord::Base
 
   def initialize(attributes)
     attributes.each {|k,v| self.send(("#{k}="),v)}
+    self.save
   end
 
   def save
