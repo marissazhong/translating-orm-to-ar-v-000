@@ -10,7 +10,7 @@ class Dog < ActiveRecord::Base
   end
 
   def self.create(attributes)
-    new_dog = Dog.new(attributes)
+    Dog.create(attributes)
   end
 
 end
